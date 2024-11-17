@@ -2,9 +2,17 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const crypto = require('crypto');
 
 // Initialize dotenv to use environment variables
 dotenv.config();
+
+// Generate a secure, random JWT secret
+const JWT_SECRET = crypto.randomBytes(64).toString('hex');
+console.log(`Generated JWT Secret: ${JWT_SECRET}`);
+
+// Make the secret globally accessible
+global.JWT_SECRET = JWT_SECRET;
 
 // Import Routes
 const authRoutes = require('./routes/authRoutes');
@@ -25,7 +33,6 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Something went wrong', error: err.message });
 });
-
 
 // Connect to MongoDB
 mongoose
