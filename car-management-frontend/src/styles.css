@@ -1,0 +1,201 @@
+/* General Reset */
+body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  nav {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a {
+    color: rgba(red, green, blue, alpha);
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px;
+  }
+  
+  nav button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  nav button:hover {
+    background-color: #d32f2f;
+  }
+  
+#signup-button{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Form Styling */
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Car List and Details */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .car-card {
+    background: white;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .car-card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .car-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .car-card p {
+    margin-bottom: 5px;
+  }
+  
+  .car-card button {
+    margin-top: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .car-card button:hover {
+    background-color: #1976D2;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form, .car-card {
+      width: 90%;
+    }
+  
+    .search-container input {
+      width: 200px;
+    }
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Add background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add spacing between items */
+  }
+  
+  .navbar-center {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .auth-btn {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .auth-btn:hover {
+    background-color: #6c63ff;
+    color: #fff;
+  }
+  
