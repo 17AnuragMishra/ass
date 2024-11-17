@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://your-api-url.com/api';  // Replace with your backend API URL
+const API_URL = 'https://assignment-ta8r.onrender.com/api';  // Replace with your backend API URL
 
 // Helper to get auth token
 const getAuthToken = () => localStorage.getItem('token');

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5001/api', // Update with your backend URL if deployed
+  baseURL: 'https://assignment-ta8r.onrender.com/api', // Update with your backend URL if deployed
 });
 
 API.interceptors.request.use((config) => {
